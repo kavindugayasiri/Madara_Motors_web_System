@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+.otp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #4285F4 0%, #2563EB 100%);
+}
+
+.otp-card {
+    background: white;
+    width: 100%;
+    max-width: 360px;
+    padding: 30px;
+    border-radius: 35px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.otp-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.back-arrow {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 15px;
+    color: #64748b;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.otp-header h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    color: #333;
+}
+
+.otp-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.otp-image img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
+.otp-text-area {
+    margin-bottom: 25px;
+}
+
+.otp-text-area p {
+    color: #64748b;
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.email-highlight {
+    color: #2563EB;
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+.otp-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 0 10px;
+}
+
+.otp-field {
+    width: 55px;
+    height: 55px;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    color: #1e293b;
+    outline: none;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.otp-field:focus {
+    border-color: #2563EB;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+    transform: translateY(-2px);
+}
+
+
+/* 7. VERIFY BUTTON */
+
+.otp-verify-btn {
+    width: 100%;
+    padding: 16px;
+    background-color: #2563EB;
+    /* Bright Blue */
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
+    margin-bottom: 20px;
+}
+
+.otp-verify-btn:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(37, 99, 235, 0.3);
+}
+
+.otp-footer {
+    font-size: 14px;
+    color: #64748b;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.timer {
+    font-weight: 700;
+    font-size: 15px;
+    color: #1e293b;
+}
+
+.resend-btn {
+    background: none;
+    border: none;
+    color: #94a3b8;
+    text-decoration: underline;
+    cursor: not-allowed;
+    font-size: 13px;
+    padding: 5px;
+}
+
+.resend-btn.active {
+    color: #2563EB;
+    cursor: pointer;
+}

@@ -1,0 +1,27 @@
+{
+    "name": "customer-frontend",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "start": "vite --open",
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "@greatsumini/react-facebook-login": "^3.4.0",
+        "@react-oauth/google": "^0.13.4",
+        "@reduxjs/toolkit": "^2.11.2",
+        "axios": "^1.15.2",
+        "date-fns": "^4.1.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-redux": "^9.2.0",
+        "react-router-dom": "^6.21.0"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-react": "^4.2.1",
+        "vite": "^5.0.8"
+    }
+}
