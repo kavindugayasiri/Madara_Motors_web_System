@@ -244,28 +244,42 @@ ratings (id, customer_id, inspector_id, rating, review, created_at)
 
 ---
 
-## 👨‍💻 Authors
+
+---
+
+## 🎓 Academic Information
+
+| Detail | Info |
+|--------|------|
+| **Student** | Kavidu Gayasiri Bandara |
+| **Course** | HND in Software Engineering |
+| **Institute** | NIBM — National Institute of Business Management |
+| **Module** | Enterprise Application Development 2 (EAD2) |
+
+---
+
+## 👨‍💻 Author
 
 <div align="center">
 
-### Kavidu Gayasiri Bandara
+**Kavidu Gayasiri Bandara**
+
 [![GitHub](https://img.shields.io/badge/GitHub-kavindugayasiri-181717?style=for-the-badge&logo=github)](https://github.com/kavindugayasiri)
 [![Email](https://img.shields.io/badge/Email-kavindugayasiri%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kavindugayasiri@gmail.com)
 
 *NIBM Software Engineering Student | Kurunegala, Sri Lanka* 🇱🇰
-
----
-
-### Oshadhi Harindya Senarathna
-[![GitHub](https://img.shields.io/badge/GitHub-oshadhisenarathna-181717?style=for-the-badge&logo=github)](https://github.com/oshadhisenarathna)
-
-*NIBM Software Engineering Student* 🇱🇰
 
 </div>
 
 ---
 
 <div align="center">
+
+Made with ❤️ by **Kavidu Gayasiri Bandara**
+
+⭐ Star this repo if you found it helpful!
+
+</div>
 
 Made with ❤️ by **Kavidu Gayasiri Bandara** & **Oshadhi Harindya Senarathna**
 
