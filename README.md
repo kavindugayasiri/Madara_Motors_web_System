@@ -1,288 +1,408 @@
-# 🚗 Vehicle Inspection & Repair Advisory Web System
-
 <div align="center">
 
-![Vehicle Inspection](https://img.shields.io/badge/Project-Vehicle%20Inspection-1a237e?style=for-the-badge&logo=car&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.4.5-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
-![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Flutter](https://img.shields.io/badge/Flutter-Mobile-02569B?style=for-the-badge&logo=flutter&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![JWT](https://img.shields.io/badge/JWT-Auth-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0f0f,50:b91c1c,100:f97316&height=220&section=header&text=Madara%20Motors&fontSize=62&fontColor=ffffff&fontAlignY=38&desc=Vehicle%20Spare%20Parts%20%E2%80%A2%20Inventory%20%E2%80%A2%20POS%20%E2%80%A2%20E-Commerce&descAlignY=58&descSize=18&animation=fadeIn" width="100%" alt="Madara Motors banner"/>
 
-**A full-stack web platform connecting vehicle buyers with certified inspectors across Sri Lanka**
+<a href="#">
+  <img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=22&duration=3000&pause=900&color=F97316&center=true&vCenter=true&width=640&lines=Full-stack+Spare+Parts+Management+System;Manager+%E2%80%A2+Cashier+%E2%80%A2+Store+Keeper+%E2%80%A2+Customer;Spring+Boot+%2B+React+%2B+MySQL" alt="Typing SVG"/>
+</a>
 
-*EAD2 Coursework Project — NIBM Higher National Diploma in Software Engineering*
+<br/>
 
-[🌐 Live Demo](#) · [📱 Mobile App](#) · [📖 API Docs](#api-endpoints) · [🐛 Report Bug](https://github.com/kavindugayasiri/Madara_Motors_web_System/issues)
+![Java](https://img.shields.io/badge/Java-17-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.2.3-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
+![React](https://img.shields.io/badge/React-19_%7C_18-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-7_%7C_5-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-8-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![JWT](https://img.shields.io/badge/Auth-JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
+
+![Status](https://img.shields.io/badge/status-active-success?style=flat-square)
+![Type](https://img.shields.io/badge/HND-Group_Project-b91c1c?style=flat-square)
+![Made in](https://img.shields.io/badge/Made_in-Sri_Lanka_🇱🇰-f97316?style=flat-square)
+
+<br/>
+
+**A complete web system for a vehicle spare parts shop** — an online parts store for customers,<br/>
+and role-based dashboards for the manager, cashier and store keeper, all on one Spring Boot API.
+
+[✨ Features](#-features) · [🏗️ Architecture](#️-architecture) · [🚀 Getting Started](#-getting-started) · [🔌 API](#-api-overview) · [👥 Team](#-team)
 
 </div>
 
 ---
 
-## 📋 Table of Contents
+## 📖 Table of Contents
 
 - [About the Project](#-about-the-project)
 - [Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [System Architecture](#-system-architecture)
-- [Getting Started](#-getting-started)
-- [API Endpoints](#-api-endpoints)
 - [User Roles](#-user-roles)
-- [Database Schema](#-database-schema)
-- [Author](#-author)
+- [Architecture](#️-architecture)
+- [Tech Stack](#️-tech-stack)
+- [Project Structure](#-project-structure)
+- [Getting Started](#-getting-started)
+- [Configuration](#️-configuration)
+- [API Overview](#-api-overview)
+- [Order Lifecycle](#-order-lifecycle)
+- [Team](#-team)
 
 ---
 
-## 🎯 About the Project
+## 🏍️ About the Project
 
-The **Vehicle Inspection & Repair Advisory Web System** is a comprehensive digital platform designed to solve a critical problem in Sri Lanka's used vehicle market — the lack of transparent, accessible, and reliable vehicle inspection services.
+**Madara Motors Web System** digitalises the day-to-day work of a vehicle spare parts business. It brings together three apps:
 
-### 🔍 Problem Statement
-When purchasing a used vehicle in Sri Lanka, buyers face significant risks due to hidden mechanical issues, lack of professional inspection services, and no centralized platform to find certified vehicle inspectors. This often leads to costly repairs after purchase.
-
-### ✅ Solution
-This platform bridges the gap between **vehicle buyers (customers)** and **certified vehicle inspectors**, providing:
-- A searchable directory of verified inspectors across Sri Lanka
-- Direct inspector hiring with appointment booking
-- Repair cost advisory and estimates
-- Ratings and reviews for inspectors
-- Real-time request tracking for both customers and inspectors
+<table>
+<tr>
+<td width="33%" align="center">
+<h3>🛒</h3>
+<b>Customer Storefront</b><br/>
+<sub>Browse parts by vehicle type, brand and model, add them to a cart, check out and track orders.</sub>
+</td>
+<td width="33%" align="center">
+<h3>🧑‍💼</h3>
+<b>Staff Portal</b><br/>
+<sub>Separate dashboards for the Manager, Cashier and Store Keeper, with OTP-secured login.</sub>
+</td>
+<td width="33%" align="center">
+<h3>⚙️</h3>
+<b>REST API</b><br/>
+<sub>Spring Boot backend with JWT auth, email notifications, PDF purchase orders and scheduled jobs.</sub>
+</td>
+</tr>
+</table>
 
 ---
 
 ## ✨ Features
 
-### 👤 Customer Features
-- 🔍 **Search & Browse Inspectors** — Filter by location, specialization, rating, and availability
-- 📋 **Inspector Profiles** — View detailed profiles, certifications, and customer reviews
-- 📅 **Hire Directly** — Send hiring requests with vehicle details and preferred date
-- 📊 **Track Requests** — Real-time status updates (Pending → Accepted → Completed)
-- ⭐ **Rate & Review** — Leave feedback for completed inspections
-- 🔧 **Repair Info** — Browse repair cost estimates and advisory guides
+<details open>
+<summary><b>🛒 Customer Storefront</b></summary>
+<br/>
 
-### 🔧 Inspector Features
-- 🗂️ **Professional Dashboard** — Manage all incoming hiring requests
-- ✅ **Accept/Reject Requests** — Full control over workload and schedule
-- 📈 **Job History** — Track completed inspections
-- 👤 **Profile Management** — Update certifications, location, and specializations
+| Feature | Description |
+|---|---|
+| 🔍 **Parts Catalog** | Search and filter by vehicle type (Car, Van, SUV, Lorry…), brand, model and category |
+| 📄 **Product Details** | Price, stock availability, compatibility info and customer reviews ⭐ |
+| 🛍️ **Cart & Checkout** | Persistent cart with a smooth checkout flow |
+| 📦 **My Orders** | Track order status and cancel eligible orders |
+| 🔐 **Auth** | Email + password registration with OTP email verification |
+| 🌐 **Social Login** | Sign in with **Google** or **Facebook** |
+| 🔑 **Password Recovery** | Forgot password → OTP → reset |
+| 👤 **Profile** | Edit profile details and change email with a confirm/cancel link |
 
-### 🛡️ Admin Features
-- 👥 **User Management** — View and manage all registered users
-- ✔️ **Inspector Verification** — Approve/reject inspector registrations
-- 🔧 **Repair Database** — Add, update, and delete repair information
-- 📊 **Platform Analytics** — Monitor system activity
+</details>
 
----
+<details open>
+<summary><b>🧑‍💼 Manager Dashboard</b></summary>
+<br/>
 
-## 🛠️ Tech Stack
+- 📊 **Analytics overview**: sales charts, top products, sales by category, daily profit
+- 📦 **Inventory** management with low-stock alerts
+- 🚚 **Suppliers** and **Purchase Orders**, with the PO emailed to the supplier as a **PDF**
+- 🧾 **Orders** & **Customers** management
+- 👥 **User (staff) management**: create accounts and approve account activation requests
+- 📑 **Reports**: GRN history, returns and damaged items
+- 🔔 Real-time style **notifications** with approve / reject / dismiss actions
 
-### Backend
-| Technology | Version | Purpose |
-|-----------|---------|---------|
-| **Java** | 17 | Core language |
-| **Spring Boot** | 3.4.5 | REST API framework |
-| **Spring Security** | 6.x | Authentication & authorization |
-| **JWT (jjwt)** | 0.12.6 | Token-based authentication |
-| **Spring Data JPA** | — | ORM and database layer |
-| **Maven** | 3.x | Build and dependency management |
+</details>
 
-### Frontend (Web)
-| Technology | Version | Purpose |
-|-----------|---------|---------|
-| **React** | 18 | UI framework |
-| **Vite** | 5.x | Build tool and dev server |
-| **React Router DOM** | v6 | Client-side routing |
-| **Axios** | 1.x | HTTP client with JWT interceptor |
-| **Context API** | — | Global auth state management |
+<details>
+<summary><b>💵 Cashier Dashboard</b></summary>
+<br/>
 
-### Mobile App
-| Technology | Version | Purpose |
-|-----------|---------|---------|
-| **Flutter** | 3.x | Cross-platform mobile framework |
-| **Dart** | 3.x | Programming language |
+- 🖥️ **Point of Sale (POS)** for walk-in sales with bill lookup
+- 🔁 **Returns** handling (RMA)
+- 🧩 **Vehicle compatibility** search for parts
+- 🕘 **Sales history** & **profit** view
+- 📨 Send stock requests to the manager
 
-### Database
-| Technology | Purpose |
-|-----------|---------|
-| **MySQL 8.0** | Primary relational database |
+</details>
 
----
+<details>
+<summary><b>🏬 Store Keeper Dashboard</b></summary>
+<br/>
 
-## 🏗️ System Architecture
+- 📥 **Inward stock / GRN** entry
+- 📉 **Low-stock** and **out-of-stock** monitoring
+- ⚠️ **Damaged items** recording
+- 🧩 Vehicle compatibility lookup
+- 📦 Full inventory view with stock updates
 
----
+</details>
 
-## 🚀 Getting Started
+<details>
+<summary><b>🔒 Security & Automation</b></summary>
+<br/>
 
-### Prerequisites
-- ☕ Java 17
-- 📦 Maven 3.6+
-- 🗄️ MySQL 8.0
-- 🌐 Node.js 18+
-- 📱 Flutter SDK (for mobile)
+- 🔐 **JWT** authentication (24h tokens) + Spring Security
+- ✉️ **OTP verification** for staff login and customer sign-up
+- 🚫 Account lock & activation-request flow
+- 📧 Automated HTML emails: OTP, welcome, *order ready*, *order picked up*, purchase orders
+- ⏰ **Scheduled job** runs daily at midnight to auto-cancel stale orders (7-day policy)
 
-### 1️⃣ Clone the Repository
-
-```bash
-git clone https://github.com/kavindugayasiri/Madara_Motors_web_System.git
-cd Madara_Motors_web_System
-```
-
-### 2️⃣ Database Setup
-
-```sql
-CREATE DATABASE vehicle_inspection_db;
-```
-
-### 3️⃣ Backend Setup
-
-```bash
-cd Madara_Motos_WEBSysteme
-mvn spring-boot:run
-```
-✅ Runs at **http://localhost:8080**
-
-### 4️⃣ Frontend Setup
-
-```bash
-cd vehicle-inspection-frontend
-npm install
-npm run dev
-```
-✅ Runs at **http://localhost:5173**
-
-### 5️⃣ Flutter Mobile Setup
-
-```bash
-cd vehicle-inspection-mobile
-flutter pub get
-flutter run
-```
-
----
-
-## 📡 API Endpoints
-
-### 🔐 Authentication
-| Method | Endpoint | Description | Auth |
-|--------|----------|-------------|------|
-| `POST` | `/api/auth/register` | Register new user | ❌ |
-| `POST` | `/api/auth/login` | Login & get JWT | ❌ |
-
-### 👥 Inspectors
-| Method | Endpoint | Description | Auth |
-|--------|----------|-------------|------|
-| `GET` | `/api/inspectors` | All verified inspectors | ❌ |
-| `GET` | `/api/inspectors/{id}` | Inspector by ID | ❌ |
-
-### 📋 Hiring
-| Method | Endpoint | Description | Role |
-|--------|----------|-------------|------|
-| `POST` | `/api/hiring/request` | Send hiring request | CUSTOMER |
-| `GET` | `/api/hiring/my-requests` | Customer's requests | CUSTOMER |
-| `GET` | `/api/hiring/inspector-requests` | Inspector's jobs | INSPECTOR |
-| `PUT` | `/api/hiring/{id}/status` | Accept/Reject | INSPECTOR |
-
-### 🛡️ Admin
-| Method | Endpoint | Description | Role |
-|--------|----------|-------------|------|
-| `GET` | `/api/admin/users` | All users | ADMIN |
-| `PATCH` | `/api/admin/inspectors/{id}/verify` | Verify inspector | ADMIN |
-| `POST` | `/api/admin/repairs` | Add repair info | ADMIN |
-| `DELETE` | `/api/admin/repairs/{id}` | Delete repair info | ADMIN |
-
-> 🔒 Protected endpoints require: `Authorization: Bearer <JWT_TOKEN>`
+</details>
 
 ---
 
 ## 👥 User Roles
 
-| Role | Description |
-|------|-------------|
-| 🙋 **CUSTOMER** | Hire inspectors, track requests, rate inspectors |
-| 🔧 **INSPECTOR** | Manage requests, update profile, view job history |
-| 🛡️ **ADMIN** | Full platform management, user verification |
+| Role | Portal | Main Responsibilities |
+|:---:|:---:|---|
+| 👑 **Manager** | `/manager-dashboard` | Analytics, inventory, suppliers, purchase orders, staff, reports |
+| 💵 **Cashier** | `/cashier-dashboard` | POS billing, returns, sales history, compatibility lookup |
+| 🏬 **Store Keeper** | `/store-dashboard` | GRN / inward stock, low-stock & damaged items |
+| 🙋 **Customer** | Storefront | Browse, buy, review and track orders |
 
 ---
 
-## 🗄️ Database Schema
+## 🏗️ Architecture
 
-```sql
-users (id, full_name, email, password, role, phone, created_at)
-inspector_profiles (id, user_id, location, specialization, experience, rating, is_verified)
-hiring_requests (id, customer_id, inspector_id, vehicle_type, vehicle_reg, status, requested_at)
-repair_info (id, vehicle_type, issue_type, description, estimated_cost_min, estimated_cost_max)
-ratings (id, customer_id, inspector_id, rating, review, created_at)
+```mermaid
+flowchart LR
+    subgraph Clients
+        C["🛒 Customer Frontend<br/>React 18 · Redux · Vite"]
+        A["🧑‍💼 Admin / Staff Frontend<br/>React 19 · Tailwind · Recharts"]
+    end
+
+    subgraph Server["⚙️ Spring Boot API :8080"]
+        CT[Controllers] --> SV[Services]
+        SV --> RP[JPA Repositories]
+        SV --> EM["✉️ Email Service<br/>(Gmail SMTP + PDF)"]
+        SC["⏰ Scheduler"] --> SV
+    end
+
+    C -- "REST + JWT" --> CT
+    A -- "REST + JWT" --> CT
+    RP --> DB[("🐬 MySQL")]
+    EM --> M["📧 Customers & Suppliers"]
 ```
 
 ---
 
-## 📂 Project Structure
+## 🛠️ Tech Stack
+
+<table>
+<tr><th>Layer</th><th>Technologies</th></tr>
+<tr>
+<td><b>Backend</b></td>
+<td>
+<img src="https://skillicons.dev/icons?i=java,spring,maven&theme=dark" alt="backend icons"/><br/>
+Spring Boot 3.2 · Spring Data JPA · Spring Security · Spring Mail · Validation · JJWT · Thymeleaf · OpenPDF / Flying Saucer
+</td>
+</tr>
+<tr>
+<td><b>Admin Frontend</b></td>
+<td>
+<img src="https://skillicons.dev/icons?i=react,vite,tailwind,ts&theme=dark" alt="admin icons"/><br/>
+React 19 · Vite 7 · Tailwind CSS 4 · Framer Motion · Recharts · Lucide Icons · Axios
+</td>
+</tr>
+<tr>
+<td><b>Customer Frontend</b></td>
+<td>
+<img src="https://skillicons.dev/icons?i=react,redux,vite,js&theme=dark" alt="customer icons"/><br/>
+React 18 · Redux Toolkit · React Router · Google OAuth · Facebook Login · date-fns · Axios
+</td>
+</tr>
+<tr>
+<td><b>Database</b></td>
+<td><img src="https://skillicons.dev/icons?i=mysql&theme=dark" alt="mysql"/><br/>MySQL (Hibernate auto schema update)</td>
+</tr>
+<tr>
+<td><b>Tools</b></td>
+<td><img src="https://skillicons.dev/icons?i=idea,vscode,git,github,postman&theme=dark" alt="tools"/></td>
+</tr>
+</table>
 
 ---
 
-## 🎓 Academic Information
+## 📁 Project Structure
 
-| Detail | Info |
-|--------|------|
-| **Student** | Kavidu Gayasiri Bandara |
-| **Course** | HND in Software Engineering |
-| **Institute** | NIBM — National Institute of Business Management |
-| **Module** | Enterprise Application Development 2 (EAD2) |
-
----
----
-
-## 🎓 Academic Information
-
-| Detail | Info |
-|--------|------|
-| **Student** | Kavidu Gayasiri Bandara |
-| **Course** | HND in Software Engineering |
-| **Institute** | NIBM — National Institute of Business Management |
-| **Module** | Enterprise Application Development 2 (EAD2) |
-
----
-
-
----
-
-## 🎓 Academic Information
-
-| Detail | Info |
-|--------|------|
-| **Student** | Kavidu Gayasiri Bandara |
-| **Course** | HND in Software Engineering |
-| **Institute** | NIBM — National Institute of Business Management |
-| **Module** | Enterprise Application Development 2 (EAD2) |
+```text
+Madara_Motos_WEBSysterm/
+├── 📂 backend/                    # Spring Boot REST API
+│   ├── src/main/java/com/example/backend/
+│   │   ├── config/                # Security & CORS
+│   │   ├── controller/            # REST endpoints (18 controllers)
+│   │   ├── dto/                   # Request / response objects
+│   │   ├── entity/                # JPA entities (SparePart, Order, Supplier, ...)
+│   │   ├── repository/            # Spring Data repositories
+│   │   ├── service/               # Business logic, email, scheduler
+│   │   └── util/                  # JWT & OTP helpers
+│   ├── src/main/resources/application.properties
+│   └── pom.xml
+│
+├── 📂 admin fronted/              # Staff portal (Manager / Cashier / Store)
+│   └── src/
+│       ├── components/            # Dashboard widgets, charts, tables
+│       └── pages/                 # Login, OTP, Manager, Cashier, Sales dashboards
+│
+└── 📂 customer_frontend/          # Customer online store
+    └── src/
+        ├── pages/                 # Home, Catalog, Cart, Checkout, Orders, Profile
+        ├── context/               # Auth & Cart context
+        ├── routes/                # Protected routes
+        └── services/api.js        # Axios API client
+```
 
 ---
 
-## 👨‍💻 Author
+## 🚀 Getting Started
+
+### ✅ Prerequisites
+
+| Tool | Version |
+|---|---|
+| ☕ JDK | 17+ |
+| 🟢 Node.js | 18+ |
+| 🐬 MySQL | 8.x |
+| 📦 Maven | bundled `mvnw` wrapper |
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/kavindugayasiri/Madara_Motors_web_System.git
+cd Madara_Motors_web_System/Madara_Motos_WEBSysterm
+```
+
+### 2️⃣ Run the backend
+
+```bash
+cd backend
+# configure application.properties first (see Configuration below)
+./mvnw spring-boot:run        # Windows: mvnw spring-boot:run
+```
+
+> 🟢 API runs at **http://localhost:8080**. The database `Project1` is created automatically.
+
+### 3️⃣ Run the Admin / Staff frontend
+
+```bash
+cd "admin fronted"
+npm install
+npm run dev
+```
+
+> 🟢 Opens at **http://localhost:3000**
+>
+> 💡 Tip: `npm run start-all` starts the backend and admin frontend together.
+
+### 4️⃣ Run the Customer frontend
+
+```bash
+cd customer_frontend
+npm install
+npm run dev
+```
+
+> 🟢 Opens at **http://localhost:5173**
+
+---
+
+## ⚙️ Configuration
+
+### Backend: `backend/src/main/resources/application.properties`
+
+```properties
+# Database
+spring.datasource.url=jdbc:mysql://localhost:3306/Project1?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true
+spring.datasource.username=YOUR_DB_USER
+spring.datasource.password=YOUR_DB_PASSWORD
+
+# JWT
+app.jwt.secret=YOUR_LONG_RANDOM_SECRET
+app.jwt.expiration=86400000
+
+# Gmail SMTP (use a Gmail App Password)
+spring.mail.username=your-email@gmail.com
+spring.mail.password=YOUR_APP_PASSWORD
+```
+
+### Customer frontend: `customer_frontend/.env`
+
+```env
+VITE_GOOGLE_CLIENT_ID=your-google-oauth-client-id
+VITE_FACEBOOK_APP_ID=your-facebook-app-id
+```
+
+> ⚠️ **Never commit real passwords, secrets or API keys.** Keep them in environment variables or a local file listed in `.gitignore`.
+
+---
+
+## 🔌 API Overview
+
+Base URL: `http://localhost:8080`
+
+| Module | Endpoint | Purpose |
+|---|---|---|
+| 🔐 Staff Auth | `/api/auth` | Login, OTP verify/resend, forgot/reset password, activation request |
+| 🙋 Customer Auth | `/api/customer/auth` | Register, login, verify email, Google / Facebook login |
+| ✉️ Email Change | `/api/email-change` | Request, confirm and cancel email changes |
+| 🔩 Spare Parts | `/api/spareparts` | Search, filter, by brand / vehicle, compatibility, low stock |
+| 📦 Products | `/api/products` | Add, update, update stock, delete |
+| 🧾 Orders | `/api/orders` | Place, update status, cancel, customer orders |
+| 💵 Sales | `/api/sales` | POS sales, bill lookup, daily profit |
+| 🔁 Returns | `/api/returns` | Return requests |
+| ⚠️ Damaged | `/api/damaged` | Damaged item records |
+| 🚚 Suppliers | `/api/suppliers` | Supplier CRUD |
+| 📝 Purchases | `/api/purchases` | Purchase orders (emailed as PDF) |
+| 📥 GRN History | `/api/grn-history` | Goods received notes |
+| ⭐ Reviews | `/api/reviews` | Product reviews |
+| 🔔 Notifications | `/api/notifications` | Pending requests: approve / reject / dismiss |
+| 👥 Users | `/api/users` | Staff accounts, profile, status |
+| 📊 Dashboard | `/api/manager-dashboard` | Manager analytics |
+
+---
+
+## 🔄 Order Lifecycle
+
+```mermaid
+stateDiagram-v2
+    direction LR
+    [*] --> Pending: Customer checks out
+    Pending --> Ready: Staff prepares order
+    Ready --> Completed: Customer picks up
+    Pending --> Cancelled: Customer cancels
+    Completed --> Cancelled: Auto-cancel job (7-day policy)
+    Ready: Ready ✉️ email sent
+    Completed: Picked up ✉️ email sent
+```
+
+---
+
+## 👥 Team
 
 <div align="center">
 
-**Kavidu Gayasiri Bandara**
+<table>
+<tr>
+<td align="center" width="220">
+<a href="https://github.com/kavindugayasiri">
+<img src="https://github.com/kavindugayasiri.png" width="100" style="border-radius:50%" alt="Kavidu"/><br/>
+<b>Kavidu Gayasiri Bandara</b>
+</a><br/>
+<sub>Full-Stack Developer</sub>
+</td>
+<td align="center" width="220">
+<img src="https://ui-avatars.com/api/?name=Oshadhi+Senarathna&background=b91c1c&color=fff&size=100&rounded=true" width="100" alt="Oshadhi"/><br/>
+<b>Oshadhi Harindya Senarathna</b><br/>
+<sub>Full-Stack Developer</sub>
+</td>
+</tr>
+</table>
 
-[![GitHub](https://img.shields.io/badge/GitHub-kavindugayasiri-181717?style=for-the-badge&logo=github)](https://github.com/kavindugayasiri)
-[![Email](https://img.shields.io/badge/Email-kavindugayasiri%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kavindugayasiri@gmail.com)
-
-*NIBM Software Engineering Student | Kurunegala, Sri Lanka* 🇱🇰
+🎓 *HND in Software Engineering · NIBM*
 
 </div>
 
 ---
 
 <div align="center">
-
-Made with ❤️ by **Kavidu Gayasiri Bandara**
-
-⭐ Star this repo if you found it helpful!
-
-</div>
 
 Made with ❤️ by **Kavidu Gayasiri Bandara** & **Oshadhi Harindya Senarathna**
 
 ⭐ Star this repo if you found it helpful!
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:f97316,50:b91c1c,100:0f0f0f&height=120&section=footer" width="100%" alt="footer"/>
 
 </div>
